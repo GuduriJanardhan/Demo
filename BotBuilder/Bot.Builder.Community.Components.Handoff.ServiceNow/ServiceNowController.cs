@@ -211,9 +211,9 @@ namespace Bot.Builder.Community.Components.Handoff.ServiceNow
                         responseActivity = MessageFactory.Attachment(linkHeroCard.ToAttachment());
 
 
-                        if (!string.IsNullOrEmpty(item.promptMsg))
+                        if (!string.IsNullOrEmpty(item.label))
                         {
-                            responseActivity.AsMessageActivity().Text = item.promptMsg;
+                            responseActivity.AsMessageActivity().Text = item.label;
                         }
 
 
