@@ -52,7 +52,6 @@ namespace Bot.Builder.Community.Components.Handoff.ServiceNow
                     if (handoffRecord != null)
                     {
                         await HandleContentEvent(responseMessage);
-
                         // If ServiceNow indicates it's completed handoff from it's perspective we end handoff and return control.
                         if (responseMessage.completed)
                         {
