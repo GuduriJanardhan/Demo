@@ -30,7 +30,6 @@ namespace Bot.Builder.Community.Components.Handoff.ServiceNow
         public static ServiceNowRequestMessage MakeServiceNowMessage(int id, string conversationId, string text, string timeZone, string userId, string emailId)
         {
             // https://docs.servicenow.com/bundle/paris-application-development/page/integrate/inbound-rest/concept/bot-api.html
-
             return new ServiceNowRequestMessage
             {
                 action = null, // Indicates to send to VA
